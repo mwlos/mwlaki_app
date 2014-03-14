@@ -1,9 +1,20 @@
 MwlakiApp::Application.routes.draw do
-  get "pages/home"
-  get "pages/contact"
-  get "static_pages/home"
-  get "static_pages/help"
-  get "pages/about"
+
+  resources :users
+
+root :to=> "pages#home"
+ 
+match '/contact', :to=> 'pages#contact', via:'get'
+match '/about', :to=> 'pages#about',via:'get'
+match '/help', :to=> 'pages#help',via:'get'
+match '/signup', :to=> 'users#new', via:'get'
+
+ # get "pages/home"
+  #get "pages/about"
+  #get  "pages/help"
+  #get "pages/contact"
+  
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

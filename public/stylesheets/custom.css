@@ -1,15 +1,15 @@
-.container {
+.container{
     width:710px; 
     }
 
-body {
+body{
     background: #cff;
     }
-header {
+header{
     padding-top:20px;       
     }
     
-header img {
+header img{
     padding:1em;
     background: #fff;
     }
@@ -21,19 +21,28 @@ section{
     background: #fff;
     
 }
+
+section h1{
+    font-size: 200%;
+    
+    
+}
+
+
+
 /*links*/
 
 a{
     color:#09c;
-    text-decoration: :none;    
+    text-decoration:none;    
 }
 
 a:hover{
-    color:#069
-    text-decoration: underline;
+    color:#069;
+    text-decoration:underline;
     }
     
-a:visited {
+a:visited{
     color:#069;
 }
 
@@ -42,12 +51,12 @@ a:visited {
 nav{ 
     float:right;
     background:white;
-    padding: 0 0.7em;
-    white-space: nowrap;
+    padding:0 0.7em;
+    white-space:nowrap;
     
 }
  
-nav ul {
+nav ul{
     margin:0;
     padding:0;   
     
@@ -55,12 +64,12 @@ nav ul {
 nav ul li{
     life-style-type:none;
     display:inline-block;
-    padding:o.2em;   
+    padding:0.2em 0;   
     
 }
 
-nav ul li a {
-    padding:o.5px;
+nav ul li a{
+    padding:0.5px;
     font-weight:bold;
     
 }
@@ -79,7 +88,7 @@ nav ul li a:hover{
 a.signup_button{
     margin-left:auto;
     margin-right:auto;
-    display:black;
+    display:block;
     text-align:center;
     width:190px;
     color:#fff;
@@ -92,18 +101,49 @@ a.signup_button{
 
 /*Round corners*/
 .round{
-    -moz-borde-radius:10px;
+    -moz-border-radius:10px;
     -webkit-border-radius:10px;
     border-radius: 10px;
-    
-    
+       
 }
 
 /*footer*/
-
+footer{
+    text-align:center;
+    margin-top:10px;
+    width:710px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
 footer nav{
     float:none;
     
+       
+}
+
+
+/*User show page*/
+
+table.profile{
+    width:100%;
+    margin-bottom: 0;
     
-    
+}
+
+td.main{
+    width: 70%;
+    padding: 1em;
+}
+
+td.sidebar{
+    width: 30%;
+    padding: 1em;
+    vertical-align: top;
+    background: #ffc;
+}
+
+.profile img.gravatar{
+    border: 1px solid #999;
+    margin-bottom: -15px;
 }
